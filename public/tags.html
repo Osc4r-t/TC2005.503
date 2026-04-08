@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header style="background-color: rgb(0, 166, 166); padding: 20px;">
+        <h2 style="color:#fff">Tag's page header</h2>
+    </header>
+    <div style="padding-left: 3%; padding-right: 3%;">
+        <h1>
+            Página de inicio de Óscar
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores id soluta ea eaque perferendis eius minima nobis impedit, expedita vero laudantium tempora ipsa tempore exercitationem maiores velit dignissimos architecto ullam.
+            Quis sunt qui voluptate sed aspernatur saepe asperiores, dicta iste omnis repellat facilis, ad possimus. Perferendis quam a dignissimos reiciendis itaque, eveniet quasi et placeat incidunt facere, hic magni numquam.
+            Officiis saepe vel voluptatem perspiciatis earum facere cum quibusdam blanditiis exercitationem excepturi. Asperiores iusto aliquam itaque, est quam minima beatae qui fugiat architecto cupiditate, alias atque iure nesciunt soluta obcaecati.
+            Repellat ad, doloribus tempora corporis nemo qui in ipsa fugit? Excepturi quibusdam libero similique, voluptate fugit asperiores vel velit, illo harum, quaerat voluptates dolorem. Officiis architecto totam quis voluptatum blanditiis.
+            Numquam necessitatibus saepe corporis! Ad, quis repudiandae nulla laudantium sint quam deserunt, suscipit minima autem, quaerat quos hic! Ut veritatis assumenda, pariatur hic saepe expedita. Doloribus consectetur dolorum esse cum!
+        </p>
+        <h3>
+            Temas de la materia
+        </h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>NodeJS</li>
+            <li>React</li>
+        </ul>
+        </div>
+        <div style="text-align: center!important;">
+            <img src="imgs/nodejs.png" style="width: 300px;">
+            <p style="font-style: italic; text-align: center;">
+                Figure 1. NodeJS.
+            </p>
+        </div>
+        <div style="text-align: center;">
+            <a href="index.html"><button>Login</button></a>
+            <a onclick="toggleCSS()"><button>CSS</button></a>
+            <a href="profile.html"><button>Profile</button></a>
+
+        </div>
+    </div>    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    toggleCSS();
+});
+function toggleCSS() {
+    const styles = document.querySelectorAll("link[rel='stylesheet'], style");
+
+    styles.forEach(style => {
+        style.disabled = !style.disabled;
+    });
+}
+</script>
+<style>
+
+h1 {
+        color:darkcyan;
+        text-align: center;
+    }
+    p {
+        color: rgb(65, 65, 65);
+        font-size: small;
+        text-align: justify;
+    }
+
+    body {
+        font-family: "Montserrat";
+        margin: 0;
+        background-color: aliceblue;
+
+    }
+    button{
+        padding: 10px;
+        background-color: rgb(0, 194, 194);
+        border: 0;
+        border-radius: 10%;
+        color: #fff;
+        font-family: "Montserrat";
+    }
+
+    button:hover {
+        background-color: rgb(0, 150, 150);
+
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+</html>
