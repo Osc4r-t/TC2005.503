@@ -1,0 +1,80 @@
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: darkcyan;
+    text-align: center;
+}
+
+p {
+    color: rgb(65, 65, 65);
+    font-size: small;
+    text-align: justify;
+}
+
+input {
+    font-family: "Montserrat";
+    border: rgb(62, 62, 62);
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(0, 194, 194);
+    border: 0;
+    border-radius: 10%;
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+button:hover {
+    background-color: rgb(0, 150, 150);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-padding {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.login-form-wrapper {
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+
+.card {
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+}
+
+.tags-header {
+    background-color: rgb(0, 166, 166);
+    padding: 20px;
+}
+
+.header-title {
+    color: #fff;
+}
+
+.figure-image {
+    width: 300px;
+}
+
+.figure-caption {
+    font-style: italic;
+    text-align: center;
+}

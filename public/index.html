@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The index </title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div style="padding-left: 3%; padding-right: 3%;">
+    <div class="page-padding">
     <h1>
         Login
     </h1>
-        <div style="justify-content: center; display: flex; margin: 10px;">
+        <div class="login-form-wrapper">
         <div class="card">
             <form>
             <label for="login_username"><p>Username:</p></label>
@@ -21,74 +22,11 @@
             </form>
         </div>
     </div>
-    <div style="text-align: center;">
+    <div class="centered-text">
         <a href="tags.html"><button>Tags</button></a>
-        <a onclick="toggleCSS()"><button>CSS</button></a>
         <a href="profile.html"><button>Profile</button></a>
+        <a href="bootstrap.html"><button>Bootstrap</button></a>
 
     </div>
 </body>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    toggleCSS();
-});
-function toggleCSS() {
-    const styles = document.querySelectorAll("link[rel='stylesheet'], style");
-
-    styles.forEach(style => {
-        style.disabled = !style.disabled;
-    });
-}
-</script>
-<style>
-    input{
-        font-family: "Montserrat";
-        border: rgb(62, 62, 62);
-        background-color: aliceblue;
-        padding: 10px;
-    }
-    .card {
-        padding: 20px;
-        width: 300px;
-        /* border-radius: 25%; */
-        background-color: white;
-    }
-    h1 {
-        color:darkcyan;
-        text-align: center;
-    }
-    p {
-        color: rgb(65, 65, 65);
-        font-size: small;
-        text-align: justify;
-    }
-
-    body {
-        font-family: "Montserrat";
-        margin: 0;
-        background-color: aliceblue;
-
-    }
-    button{
-        padding: 10px;
-        background-color: rgb(0, 194, 194);
-        border: 0;
-        border-radius: 10%;
-        color: #fff;
-        font-family: "Montserrat";
-    }
-
-    button:hover {
-        background-color: rgb(0, 150, 150);
-
-    }
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
-</style>
 </html>
-
-<script>
-
-</script>
