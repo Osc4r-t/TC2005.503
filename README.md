@@ -1,5 +1,7 @@
 # Link al repositorio
-[text](https://github.com/Osc4r-t/TC2005.503.git)
+```text
+https://github.com/Osc4r-t/TC2005.503.git
+```
 
 # Frontend
 
