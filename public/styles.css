@@ -15,11 +15,21 @@ p {
     text-align: justify;
 }
 
+label {
+    color: rgb(65, 65, 65);
+    display: block;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
 input {
     font-family: "Montserrat";
     border: rgb(62, 62, 62);
     background-color: aliceblue;
     padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -29,10 +39,16 @@ button {
     border-radius: 10%;
     color: #fff;
     font-family: "Montserrat";
+    margin: 5px;
 }
 
-button:hover {
+button:hover:enabled {
     background-color: rgb(0, 150, 150);
+}
+
+button:disabled {
+    background-color: rgb(160, 180, 180);
+    cursor: not-allowed;
 }
 
 a {
@@ -57,8 +73,58 @@ a {
 
 .card {
     padding: 20px;
-    width: 300px;
+    width: 360px;
     background-color: white;
+}
+
+.form-section {
+    margin-top: 15px;
+}
+
+.form-section legend {
+    color: darkcyan;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.radio-option,
+.checkbox-option {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.radio-option input,
+.checkbox-option input {
+    margin: 0;
+    width: auto;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+    margin-bottom: 0;
+}
+
+select {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.error-message {
+    color: rgb(180, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.help-text {
+    color: rgb(65, 65, 65);
+    text-align: center;
 }
 
 .tags-header {

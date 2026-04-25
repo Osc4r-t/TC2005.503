@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The index </title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="page-padding">
-    <h1>
-        Login
-    </h1>
+        <h1>
+            Login
+        </h1>
         <div class="login-form-wrapper">
-        <div class="card">
-            <form>
-            <label for="login_username"><p>Username:</p></label>
-            <input placeholder="Username" name="login_username" id="login_username">
-            <label for="login_password"><p>Password:</p></label>
-            <input placeholder="Password" name="login_password" id="login_password">
-            </form>
+            <div class="card">
+                <form id="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="email@email.com" name="email" id="email">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="nombre" name="nombre" id="nombre">
+
+                    <button type="button" id="login_button">Login</button>
+                    <p id="mensaje-error" class="error-message" hidden>Usuario o contraseña no válidos.</p>
+
+                    <fieldset class="form-section">
+                        <legend>Tipo de usuario</legend>
+
+                        <div class="radio-option">
+                            <input type="radio" name="opcion" id="invitado" value="Invitado">
+                            <label for="invitado">Invitado</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" name="opcion" id="ponente" value="Ponente">
+                            <label for="ponente">Ponente</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" name="opcion" id="socio" value="Socio">
+                            <label for="socio">Socio</label>
+                        </div>
+                    </fieldset>
+
+                    <p id="tipo-usuario" class="help-text" hidden></p>
+
+                    <div id="seleccion_ubicacion" class="form-section" hidden>
+                        <label for="select_pais">País:</label>
+                        <select id="select_pais" name="select_pais">
+                            <option value="">Selecciona un país</option>
+                        </select>
+
+                        <label for="select_region">Región:</label>
+                        <select id="select_region" name="select_region">
+                            <option value="">Selecciona una región</option>
+                        </select>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="terminos" name="terminos">
+                            <label for="terminos">Acepto términos y condiciones</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="emails" name="emails">
+                            <label for="emails">Quiero recibir correos</label>
+                        </div>
+                    </div>
+
+                    <button type="button" id="boton-enviar" disabled>Enviar</button>
+                    <p id="resumen-envio" class="help-text" hidden></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="centered-text">
+            <a href="tags.html"><button>Tags</button></a>
+            <a href="profile.html"><button>Profile</button></a>
+            <a href="bootstrap.html"><button>Bootstrap</button></a>
         </div>
     </div>
-    <div class="centered-text">
-        <a href="tags.html"><button>Tags</button></a>
-        <a href="profile.html"><button>Profile</button></a>
-        <a href="bootstrap.html"><button>Bootstrap</button></a>
-
-    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

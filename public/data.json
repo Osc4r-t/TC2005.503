@@ -1,0 +1,56 @@
+[
+    {
+        "countryName": "Mexico",
+        "countryShortCode": "MX",
+        "regions": [
+            {
+                "name": "Nuevo Leon",
+                "shortCode": "NL"
+            },
+            {
+                "name": "Jalisco",
+                "shortCode": "JAL"
+            },
+            {
+                "name": "Ciudad de Mexico",
+                "shortCode": "CMX"
+            }
+        ]
+    },
+    {
+        "countryName": "United States",
+        "countryShortCode": "US",
+        "regions": [
+            {
+                "name": "Texas",
+                "shortCode": "TX"
+            },
+            {
+                "name": "California",
+                "shortCode": "CA"
+            },
+            {
+                "name": "New York",
+                "shortCode": "NY"
+            }
+        ]
+    },
+    {
+        "countryName": "Canada",
+        "countryShortCode": "CA",
+        "regions": [
+            {
+                "name": "Ontario",
+                "shortCode": "ON"
+            },
+            {
+                "name": "Quebec",
+                "shortCode": "QC"
+            },
+            {
+                "name": "British Columbia",
+                "shortCode": "BC"
+            }
+        ]
+    }
+]
